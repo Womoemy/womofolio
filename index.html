@@ -11,8 +11,8 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
 </head>
 <body>
-    <header class="fixed-top">
-        <nav id="navbar" class="navbar navbar-expand-md navbar-expand-lg">
+    <header class="sticky-top">
+        <nav id="navbar" class="navbar navbar-expand-md px-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">womo.</a>
                 <a class="d-md-none" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
@@ -25,10 +25,10 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav align-items-md-center justify-content-md-end flex-grow-1 pe-md-4">
-                            <li class="nav-item d-md-flex align-self-md-center align-items-md-center font-monospace mb-4 mb-md-0">
+                            <li class="nav-item d-md-flex align-self-md-center align-items-md-center font-monospace me-3 mb-4 mb-md-0">
                                 <a class="nav-link" href="#about">About</a>
                             </li>
-                            <li class="nav-item d-md-flex align-items-md-center font-monospace mb-4 mb-md-0">
+                            <li class="nav-item d-md-flex align-items-md-center font-monospace me-3 mb-4 mb-md-0">
                                 <a class="nav-link" href="#tools">Tools</a>
                             </li>
                             <li class="nav-item d-md-flex align-items-md-center font-monospace mb-4 mb-md-0">
@@ -40,32 +40,34 @@
                         </ul>
                         <hr class="divider" />
                         <div class="d-grid d-md-flex my-4">
-                            <a href="assets/womo_ebiobowei_resume.pdf" class="btn btn-outline-primary font-monospace  px-4 py-2 mx-auto resume-link" role="button">Resume</a>
+                            <a href="assets/womo_ebiobowei_resume.pdf" class="btn btn-outline-primary font-monospace px-4 py-2 mx-auto resume-link" role="button">Resume</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container-fluid" id="content">
-        <section id="hero" class="my-5 mx-4">
-            <h1 class="mb-4">Hi, my name is </h1>
-            <!--  wave emoji &#128075; -->
-            <h3>Software Developer</h3>
+    <main class="container-fluid px-5 py-5" id="content">
+        <section id="intro" class="">
+            <h1 class="fw-light my-5">Hello! &#128075;</h1>
+            <h2 class="intro-tagline fw-light my-5">
+                I'm <span class="name fw-semibold">Womo Ebiobowei</span>, a software developer
+                specializing in building exceptional digital experiences &#128104;&#127997;&#8205;&#128187;
+            </h2>
         </section>
-        <section id="about" class="my-4 mx-4">
+        <section id="about" class="">
             <h5><span class="numbering font-monospace">01.</span> About Me</h5>
             <p class="text-middle">
                 My name is Womo Ebiobowei. 
                 I'm a Software Developer and a Computer Science student 
-                in UNN, Nigeria. I enjoy building things that run on computers 
-                (the web especially) and exploring tools, languages etc while doing that.
+                in UNN, Nigeria. I enjoy building things that run on Internet 
+                and exploring tools, languages etc while doing that.
                 I'm enthusiatic about art, music, design, dance, fashion, and photography. 
                 Lately, I've been exploring different genres of music and 
                 reading Classroom of the Elites light novels and the Harry Potter novels.
             </p>
         </section>
-        <section id="tools" class="my-5 mx-4">
+        <section id="tools" class="">
             <h5><span class="numbering font-monospace">02.</span> Tools</h5>
             <p>Here are a couple tools and technologies I've been working with recently:</p>
             <div class="d-flex flex-column">
