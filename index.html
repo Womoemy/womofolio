@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Womo Ebiobowei</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/29af45d88a.js" crossorigin="anonymous"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
 </head>
 <body>
     <header class="sticky-top">
@@ -16,7 +16,8 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">womo.</a>
                 <a class="d-md-none" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
-                    <i class="fa-solid fa-bars" id="navbar-toggler-icon"></i>
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <i class="bi bi-list" id="navbar-toggler-icon"></i>
                 </a>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -48,12 +49,12 @@
         </nav>
     </header>
     <section id="intro" class="py-5 px-5">
-        <h1 class="fw-light mt-2 mb-5 py-5 lh-base">Hello! &#128075;</h1>
-        <h2 class="fs-1 intro-tagline fw-light my-5 py-5 lh-base">
+        <h1 class="fw-light mt-2 mb-4 mb-md-4 py-3 py-md-2 lh-base">Hello! &#128075;</h1>
+        <h2 class="fs-1 intro-tagline fw-light my-4 my-md-2 py-4 py-md-2 lh-base">
             I'm <span class="name fw-semibold">Womo Ebiobowei</span>, a software developer
             specializing in building exceptional digital experiences &#128104;&#127997;&#8205;&#128187;
         </h2>
-        <h3 class="intro-contact py-5">Get in touch &#128073;
+        <h3 class="intro-contact py-4 py-md-4 ">Get in touch &#128073;
             <span><a href="mailto:womoemiebiobowei@gmail.com">womoemiebiobowei@gmail.com</a></span>
         </h3>    
     </section>
@@ -70,9 +71,9 @@
             
             <a href="mailto:womoemiebiobowei@gmail.com" class="btn btn-outline-primary font-monospace px-4 py-2" role="button">Get in touch</a> 
         </section> -->
-        <section id="about" class="py-3">
-            <h5 class="section-title mb-4">About Me</h5>
-            <div class="section-content">
+        <section id="about" class="py-3 row">
+            <h5 class="section-title mb-4 col-md-4">About Me</h5>
+            <div class="section-content col-md-8">
                 <p>
                     Hello! My name is Womo Ebiobowei.
                     I'm a Software Developer and Computer Science student 
@@ -112,34 +113,67 @@
                 Here are a couple projects I've worked on and/or contributed to in some capacity, 
                 you can find other random things I build on my GitHub page.
             </p>
-            <div>
-                <div>
+            <div class="row">
+                <!-- <div>
                     <div><img src="" alt=""><span>'project image'</span></div>
                     <h3>'project name'</h3>
                     <p>'project short description'</p>
                     <p>'technologies used in the project'</p>
                     <p>'project links - github and online'</p>
+                </div> -->
+                
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="assets/footer_arrangement_inspiration_legitng.png" class="card-img-top" alt="Metamagic">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title">Metamagic</h5>
+                            <p class="card-text project-text">A web platform for fetching and extracting metadata from files uploaded by users.</p>
+                            <!-- <span class="badge text-bg-info">Info</span> -->
+                            <p class="project-tools">
+                                <span class="badge text-bg-light">Django</span>
+                                <span class="badge text-bg-light">JavaScript</span>
+                                <span class="badge text-bg-light">CSS</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank" class="btn project-link">
+                                    <i class="bi bi-github"></i>
+                                    <span> GitHub</span> 
+                                </a>
+                                <a href="#" target="_blank" class="btn project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span> Website</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
             </div>
         </section>
-        <section id="contact">
-            <h2>~/what\'s_next</h2>
-            <h2>Get In Touch</h2>
-            <p>I'm currently looking for remote-first work and collaboration opportunities as a JavaScript and Django developer.</p>
-            <a href="">Say Hi or Hire Me!</a>
-        </section>
+        <!-- <section id="other-projects">
+            <h5 class="section-title">Other Projects</h5>
+        </section> -->
     </main>
     <footer>
-        <p>&copy; 2023 Womo Ebiobowei.</p>
+        <div class="footer-copyright d-flex justify-content-center fw-semibold">
+            <p class="mb-0">
+                &copy; 2023 Womo Ebiobowei.
+            </p>
+        </div>
+        <div class="footer-links d-flex justify-content-evenly my-4">
+            <a href="mailto:womoemiebiobowei@gmail.com" class="footer-link">
+                <i class="bi bi-envelope-fill footer-icon"></i>
+            </a>
+            <a href="http://" class="footer-link">
+                <i class="bi bi-twitter footer-icon"></i>
+            </a>
+            <a href="http://" class="footer-link">
+                <i class="bi bi-github footer-icon"></i>
+            </a>
+            <a href="http://" class="footer-link">
+                <i class="bi bi-linkedin footer-icon"></i>
+            </a>
+        </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> -->
-    <script>
-        feather.replace()
-    </script>
-
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -13,7 +13,6 @@ body {
 }
 p {
     color: #555770;
-    ;
 }
 
 /* header section styles
@@ -91,7 +90,14 @@ main {
     box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
     border-radius: 8px;
 } 
-
+.card {
+    background-color: #EBEBF0;
+    box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
+    border-radius: 8px;
+}
+.card-img-top {
+    border-radius: 4px;
+}
 
 @media screen and (min-width: 768px) {
     #intro {
@@ -105,4 +111,14 @@ main {
     }  
 }
 
-  
+/* footer section styles
+  =================================================================*/
+.footer-link {
+    /* height: 32px;
+    width: 32px; */
+    text-decoration: none;
+}
+.footer-icon {
+    font-size: 1.5rem;
+    color: #3568D4;
+}
