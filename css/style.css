@@ -10,10 +10,15 @@ body {
     background-color: #E4E4EB;
     color: #1C1C28;
     height: 100%;
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
 }
 p {
     color: #555770;
+    line-height: 1.75rem;
+    letter-spacing: .3px;
 }
+
 
 /* header section styles
   =================================================================*/
@@ -26,6 +31,9 @@ header {
     width: 300px;
 }
 .navbar-brand, .navbar-brand:hover {
+    color: #3568D4;
+}
+#offcanvas-close {
     color: #3568D4;
 }
 #navbar-toggler-icon {
@@ -41,9 +49,6 @@ header {
     content: "0" counter(item) ".";
     color: #3568D4;
 }
-/* .nav-item a {
-    color: #555770;
-} */
 .nav-link {
     color: #1C1C28;
 }
@@ -70,6 +75,9 @@ main {
     color: #3568D4;
     margin-right: 8px;
 }
+.section-title {
+    letter-spacing: 1.5px;
+}
 /* .section-header::after {
     content: "";
     height: 1px;
@@ -88,8 +96,18 @@ main {
 .tools-item {
     background-color: #EBEBF0;
     box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
-    border-radius: 8px;
-} 
+    border-radius: 4px;
+    /* color: #555770; */
+}
+.tools-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.tools-item span {
+    color: #555770;
+    vertical-align: middle;
+}
 .card {
     background-color: #EBEBF0;
     box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
@@ -109,6 +127,27 @@ main {
     .intro-contact {
         font-size: 1.25rem;
     }  
+    .section-title::before {
+        content: none;
+    }
+    .section-title {
+        color: #3568D4;
+        text-transform: uppercase;
+        width: 200px;
+    }
+    /* #about {
+        border: 1px solid red;
+    }
+    #about > * {
+        border: 1px solid red;
+    } */
+    .tools-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(4, 1fr); */
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
 }
 
 /* footer section styles
