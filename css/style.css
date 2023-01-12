@@ -6,19 +6,15 @@
 }
 
 body {
-    background-color: #E4E4EB;
-    color: #1C1C28;
+    /* background-color: #E4E4EB; */
+    /* color: #1C1C28; */
     height: 100%;
 }
 p {
-    color: #555770;
+    /* color: #555770; */
     line-height: 1.75rem;
     letter-spacing: .3px;
 }
-.animate__animated.animate__shakeX {
-    --animate-duration: 10s;
-}
-
 
 /* header section styles
   =================================================================*/
@@ -27,15 +23,15 @@ header {
     height: auto;
 }
 #offcanvasNavbar {
-    background-color: #EBEBF0;
+    /* background-color: #EBEBF0; */
     width: 300px;
 }
 .navbar-brand, .navbar-brand:hover {
     color: #3568D4;
 }
-#offcanvas-close {
+/* #offcanvas-close {
     color: #3568D4;
-}
+} */
 #navbar-toggler-icon {
     font-size: 28px;
     color: #3568D4;
@@ -49,18 +45,26 @@ header {
     content: "0" counter(item) ".";
     color: #3568D4;
 }
-.nav-link {
+/* .nav-link {
     color: #1C1C28;
-}
-.divider {
+} */
+/* .divider {
     color: #28293D;
-}
+} */
 
 /* main section styles 
   =================================================================*/
 #intro {
-    /* border: 1px solid red; */
     height: calc(100vh - 10vh);
+    animation: 1s ease intro-zoom-in;
+}
+@keyframes intro-zoom-in {
+    0% {
+        transform: scale(0.95, 0.95);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
 }
 .intro-contact {
     font-size: 1rem;
@@ -79,10 +83,10 @@ main {
     letter-spacing: 1.5px;
 }
 .tools-item {
-    background-color: #EBEBF0;
+    /* background-color: #EBEBF0; */
+    background-color: var(--bs-gray-100);
     box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
     border-radius: 4px;
-    /* color: #555770; */
 }
 .tools-icon {
     height: 24px;
@@ -90,14 +94,15 @@ main {
 }
 
 .tools-item span {
-    color: #555770;
+    /* color: #555770; */
     vertical-align: middle;
 }
 .card {
-    background-color: #EBEBF0;
+    /* background-color: #EBEBF0; */
     box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
     border-radius: 8px;
     margin-bottom: 1rem;
+    background-color: var(--bs-gray-100);
 }
 .card-img-top {
     border-radius: 4px;
