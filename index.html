@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <!-- <script src="https://kit.fontawesome.com/29af45d88a.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header class="sticky-top">
-        <nav id="navbar" class="navbar navbar-expand-md px-4">
+        <nav id="navbar" class="navbar navbar-expand-md px-4 mx-2">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">womo.</a>
                 <a class="d-md-none" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
-                    <!-- <i class="fa-solid fa-bars"></i> -->
                     <i class="bi bi-list" id="navbar-toggler-icon"></i>
                 </a>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -36,9 +34,6 @@
                             <li class="nav-item d-md-flex align-items-md-center font-monospace mb-4 mb-md-0">
                                 <a class="nav-link" href="#projects">Projects</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-regular fa-sun"></i><span class="d-md-none"> Light Mode</span></a>
-                            </li> -->
                         </ul>
                         <hr class="divider" />
                         <div class="d-grid d-md-flex my-4">
@@ -60,18 +55,6 @@
         </h3>    
     </section>
     <main class="container-fluid px-5 py-5 px-md-0 py-md-0" id="content">
-        <!-- <section id="intro" class="">
-            <h1 class="fw-light mb-5 lh-base">Hello! &#128075;</h1>
-            <h2 class="intro-tagline fw-light my-5 lh-base">
-                I'm <span class="name fw-semibold">Womo Ebiobowei</span>, a software developer
-                specializing in building exceptional digital experiences &#128104;&#127997;&#8205;&#128187;
-            </h2>
-            <h3 class="intro-contact">Get in touch &#128073;
-                <span><a href="mailto:womoemiebiobowei@gmail.com">womoemiebiobowei@gmail.com</a></span>
-            </h3>
-            
-            <a href="mailto:womoemiebiobowei@gmail.com" class="btn btn-outline-primary font-monospace px-4 py-2" role="button">Get in touch</a> 
-        </section> -->
         <section id="about" class="py-3 px-md-5 py-md-5 mb-md-5 d-md-flex justify-content-md-center">
             <h5 class="section-title mb-4 col-md-4 mb-md-0 mx-md-5 d-md-flex justify-content-md-end">About Me</h5>
             <div class="section-content col-md-8 px-md-5">
@@ -99,27 +82,26 @@
             <h5 class="section-title mb-4 col-md-4 mb-md-0 mx-md-5 d-md-flex justify-content-md-end">Tools</h5>
             <div class="section-content col-md-8 px-md-5">
                 <p>Here are a couple tools and technologies I've been working with recently:</p>
-                <!-- <div class=""> -->
-                    <div class="tools-container">
-                        <div class="tools-item px-3 py-3 mb-2">
-                            <span>Django</span>
-                        </div>
-                        <div class="tools-item px-3 py-3 mb-2">
-                            <span>Linux</span>
-                        </div>
-                        <div class="tools-item px-3 py-3 mb-2">
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="tools-item px-3 py-3 mb-2">
-                            <span>JavaScript (ES6)</span>
-                        </div>
-                        <div class="tools-item px-3 py-3 mb-2">
-                            <span>HTML5 + CSS3</span>
-                        </div>
-                        <div class="tools-item px-3 py-3 mb-2">
-                            <span>Git + GitHub</span>
-                        </div>
+                <div class="tools-container">
+                    <div class="tools-item px-3 py-3 mb-2">
+                        <span class="font-monospace">Django</span>
                     </div>
+                    <div class="tools-item px-3 py-3 mb-2">
+                        <span class="font-monospace">Linux</span>
+                    </div>
+                    <div class="tools-item px-3 py-3 mb-2">
+                        <span class="font-monospace">Bootstrap</span>
+                    </div>
+                    <div class="tools-item px-3 py-3 mb-2">
+                        <span class="font-monospace">JavaScript (ES6)</span>
+                    </div>
+                    <div class="tools-item px-3 py-3 mb-2">
+                        <span class="font-monospace">HTML5 + CSS3</span>
+                    </div>
+                    <div class="tools-item px-3 py-3 mb-2">
+                        <span class="font-monospace">Git + GitHub</span>
+                    </div>
+                </div>
             </div> 
         </section>
         <section id="projects" class="py-3 px-md-5 py-md-5 mb-md-5 d-md-flex justify-content-md-center">
@@ -132,16 +114,14 @@
                 </p>
                 <div class="project-container">
                     <div class="card project-card">
-                        <!-- <img src="assets/footer_arrangement_inspiration_legitng.png" class="card-img-top" alt="Metamagic"> -->
                         <img src="https://womoemy.github.io/hosted_assets/metamagic.png" class="card-img-top" alt="Metamagic">
                         <div class="card-body project-body">
                             <h5 class="card-title project-title">Metamagic</h5>
                             <p class="card-text project-text">A web platform for fetching and extracting metadata from files uploaded by users.</p>
-                            <!-- <span class="badge text-bg-info">Info</span> -->
                             <p class="project-tools">
-                                <span class="badge text-bg-light">Django</span>
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">CSS</span>
+                                <span class="badge text-bg-light font-monospace">Django</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
                             </p>
                             <p>
                                 <a href="https://github.com/Womoemy/Fetch_Metadata_Team89_MetaMagic" target="_blank" class="btn project-link">
@@ -156,18 +136,15 @@
                         </div>
                     </div>
                     <div class="card project-card">
-                        <!-- <img src="assets/footer_arrangement_inspiration_legitng.png" class="card-img-top" alt="Metamagic"> -->
                         <img src="https://womoemy.github.io/hosted_assets/womofolio-v1.png" class="card-img-top" alt="Womoemy's Portfolio">
                         <div class="card-body project-body">
                             <h5 class="card-title project-title">Personal Portfolio</h5>
                             <p class="card-text project-text">My personal portfolio site styled with Bootstrap 5.</p>
-                            <!-- <span class="badge text-bg-info">Info</span> -->
                             <p class="project-tools">
-                                <!-- <span class="badge text-bg-light">Django</span> -->
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">CSS</span>
-                                <span class="badge text-bg-light">Bootstrap</span>
-                                <span class="badge text-bg-light">HTML</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
+                                <span class="badge text-bg-light font-monospace">Bootstrap</span>
+                                <span class="badge text-bg-light font-monospace">HTML</span>
                             </p>
                             <p>
                                 <!-- <a href="https://github.com/Womoemy/admin-dashboard-ui" target="_blank" class="btn project-link">
@@ -182,16 +159,14 @@
                         </div>
                     </div>
                     <div class="card project-card">
-                        <!-- <img src="assets/footer_arrangement_inspiration_legitng.png" class="card-img-top" alt="Metamagic"> -->
                         <img src="https://womoemy.github.io/hosted_assets/classforums.png" class="card-img-top" alt="Class Forums">
                         <div class="card-body project-body">
                             <h5 class="card-title project-title">Class Forums</h5>
                             <p class="card-text project-text">A web platform for fetching and extracting metadata from files uploaded by users.</p>
-                            <!-- <span class="badge text-bg-info">Info</span> -->
                             <p class="project-tools">
-                                <span class="badge text-bg-light">Django</span>
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">CSS</span>
+                                <span class="badge text-bg-light font-monospace">Django</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
                             </p>
                             <p>
                                 <a href="#" target="_blank" class="btn project-link">
@@ -206,15 +181,14 @@
                         </div>
                     </div>
                     <div class="card project-card">
-                        <!-- <img src="assets/footer_arrangement_inspiration_legitng.png" class="card-img-top" alt="Metamagic"> -->
                         <img src="https://womoemy.github.io/hosted_assets/rps.png" class="card-img-top" alt="Metamagic">
                         <div class="card-body project-body">
                             <h5 class="card-title project-title">Rock, Paper, Scissors</h5>
                             <p class="card-text project-text">Rock, Paper, Scissors web game made with JavaScript, HTML and CSS.</p>
                             <p class="project-tools">
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">CSS</span>
-                                <span class="badge text-bg-light">HTML</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
+                                <span class="badge text-bg-light font-monospace">HTML</span>
                             </p>
                             <p>
                                 <a href="https://github.com/Womoemy/rock_paper_scissors" target="_blank" class="btn project-link">
@@ -229,16 +203,14 @@
                         </div>
                     </div>
                     <div class="card project-card">
-                        <!-- <img src="assets/footer_arrangement_inspiration_legitng.png" class="card-img-top" alt="Metamagic"> -->
                         <img src="https://womoemy.github.io/hosted_assets/resource-edge.png" class="card-img-top" alt="Metamagic">
                         <div class="card-body project-body">
                             <h5 class="card-title project-title">Resource Edge</h5>
                             <p class="card-text project-text">Landing page clone for Resource Edge - A human resource application for automating all the human resource needs of your organisation.</p>
                             <p class="project-tools">
-                                <span class="badge text-bg-light">ReactJS</span>
-                                <!-- <span class="badge text-bg-light">JavaScript</span> -->
-                                <span class="badge text-bg-light">CSS</span>
-                                <span class="badge text-bg-light">HTML</span>
+                                <span class="badge text-bg-light font-monospace">ReactJS</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
+                                <span class="badge text-bg-light font-monospace">HTML</span>
                             </p>
                             <p>
                                 <a href="https://github.com/Womoemy/resource-edge" target="_blank" class="btn project-link">
@@ -259,9 +231,9 @@
                             <p class="card-text project-text">Web-based clone of the renowned Etch A Sketch children's toy.</p>
                             <p class="project-tools">
                                 <!-- <span class="badge text-bg-light">ReactJS</span> -->
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">CSS</span>
-                                <span class="badge text-bg-light">HTML</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
+                                <span class="badge text-bg-light font-monospace">HTML</span>
                             </p>
                             <p>
                                 <a href="https://github.com/Womoemy/etch-a-sketch" target="_blank" class="btn project-link">
@@ -281,10 +253,9 @@
                             <h5 class="card-title project-title">Admin Dashboard</h5>
                             <p class="card-text project-text">Desktop UI clone for an admin dashboard implemented solely with CSS Grid (no Flexbox) and HTML.</p>
                             <p class="project-tools">
-                                <!-- <span class="badge text-bg-light">ReactJS</span> -->
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">CSS</span>
-                                <span class="badge text-bg-light">HTML</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">CSS</span>
+                                <span class="badge text-bg-light font-monospace">HTML</span>
                             </p>
                             <p>
                                 <a href="https://github.com/Womoemy/admin-dashboard-ui" target="_blank" class="btn project-link">
@@ -304,10 +275,9 @@
                             <h5 class="card-title project-title">Console - Library</h5>
                             <p class="card-text project-text">A book lending console app made with Node.Js!</p>
                             <p class="project-tools">
-                                <!-- <span class="badge text-bg-light">ReactJS</span> -->
-                                <span class="badge text-bg-light">NodeJS</span>
-                                <span class="badge text-bg-light">JavaScript</span>
-                                <span class="badge text-bg-light">Replit</span>
+                                <span class="badge text-bg-light font-monospace">NodeJS</span>
+                                <span class="badge text-bg-light font-monospace">JavaScript</span>
+                                <span class="badge text-bg-light font-monospace">Replit</span>
                             </p>
                             <p>
                                 <a href="https://replit.com/@Womoemy/Library-App" target="_blank" class="btn project-link">
@@ -321,28 +291,28 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-copyright d-flex justify-content-center fw-semibold">
+    <footer id="footer-section" class="px-md-5">
+        <div class="footer-copyright text-center mb-2">
             <p class="mb-0">
                 &copy; 2023 Womo Ebiobowei.
             </p>
         </div>
-        <div class="footer-links d-flex justify-content-evenly my-4">
+        <div class="footer-links">
             <a href="mailto:womoemiebiobowei@gmail.com" class="footer-link">
                 <i class="bi bi-envelope-fill footer-icon"></i>
-                <span>email</span>
+                <span class="footer-social">email</span>
             </a>
-            <a href="http://" class="footer-link">
+            <a href="https://twitter.com/womoemy" class="footer-link">
                 <i class="bi bi-twitter footer-icon"></i>
-                <span>twitter</span>
+                <span class="footer-social">twitter</span>
             </a>
-            <a href="http://" class="footer-link">
+            <a href="https://github.com/Womoemy" class="footer-link">
                 <i class="bi bi-github footer-icon"></i>
-                <span>github</span>
+                <span class="footer-social">github</span>
             </a>
-            <a href="http://" class="footer-link">
+            <a href="https://www.linkedin.com/in/womo-emmanuel-ebiobowei/" class="footer-link">
                 <i class="bi bi-linkedin footer-icon"></i>
-                <span>linkedin</span>
+                <span class="footer-social">linkedin</span>
             </a>
         </div>
     </footer>
