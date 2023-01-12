@@ -4,4 +4,5 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.about');
 ScrollReveal().reveal('.tools');
+ScrollReveal().reveal('.experience');
 ScrollReveal().reveal('.projects');
