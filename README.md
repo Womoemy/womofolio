@@ -1,8 +1,8 @@
 <h1 align="center">
     womoemy.com.ng - v2
-<h1>
+</h1>
 <p align="center">
-    My personal website [womoemy.com.ng](https://womoemy.com.ng/)
+    My personal website <a href="https://womoemy.com.ng/">womoemy.com.ng</a>
     built with JS, HTML and CSS, 
-    and hosted with [Netlify](https://www.netlify.com/)
+    and hosted with <a href="https://www.netlify.com/">Netlify</a>
 </p>
