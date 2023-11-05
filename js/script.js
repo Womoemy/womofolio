@@ -1,3 +1,5 @@
+import ScrollReveal from 'scrollreveal';
+
 ScrollReveal({
     easing: 'cubic-bezier(.694,0,.335,1)',
     viewFactor: 0.1,

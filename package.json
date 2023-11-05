@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "parcel": "^2.8.3",
+    "scrollreveal": "^4.0.9"
+  }
+}
